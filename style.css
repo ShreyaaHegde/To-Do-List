@@ -141,6 +141,7 @@ input {
   scrollbar-color: var(--dark-color);
 }
 
+
 .input-fields {
   display: grid;
   grid-template-rows: 3fr 2fr 2fr 1fr;
@@ -195,3 +196,18 @@ input {
   text-decoration-color: var(--light-color);
 }
 
+.description{
+color: var(--light-color) !important;
+}
+
+.time::-webkit-calendar-picker-indicator,
+.date::-webkit-calendar-picker-indicator
+{
+/* background-color: var(--light-color);
+border-radius: 50%; */
+filter:invert(100%);
+}
+
+.description::-webkit-input-placeholder{
+  color: var(--light-color);
+}
